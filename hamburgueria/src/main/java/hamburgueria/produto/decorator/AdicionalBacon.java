@@ -20,4 +20,9 @@ public class AdicionalBacon extends LancheDecorator {
     public double getPreco() {
         return super.getPreco() + 5.0;
     }
+
+    @Override
+    public Lanche clonar() {
+        return new AdicionalBacon(this.lancheDecorado.clonar());
+    }
 }

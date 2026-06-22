@@ -9,4 +9,9 @@ public class SucoNatural implements Bebida {
     public String getDescricao() {
         return "Suco Natural de Laranja";
     }
+
+    @Override
+    public double getPreco() {
+        return 12.00;
+    }
 }

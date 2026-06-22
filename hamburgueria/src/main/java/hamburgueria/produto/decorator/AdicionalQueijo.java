@@ -20,4 +20,9 @@ public class AdicionalQueijo extends LancheDecorator {
     public double getPreco() {
         return super.getPreco() + 3.5;
     }
+
+    @Override
+    public Lanche clonar() {
+        return new AdicionalQueijo(this.lancheDecorado.clonar());
+    }
 }

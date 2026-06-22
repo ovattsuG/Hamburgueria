@@ -9,4 +9,14 @@ public class BatataFrita implements Acompanhamento {
     public String emitir() {
         return "Porção de Batata Frita";
     }
+
+    @Override
+    public String getDescricao() {
+        return emitir();
+    }
+
+    @Override
+    public double getPreco() {
+        return 10.00;
+    }
 }

@@ -9,4 +9,9 @@ public class Refrigerante implements Bebida {
     public String getDescricao() {
         return "Refrigerante Cola";
     }
+
+    @Override
+    public double getPreco() {
+        return 8.00;
+    }
 }

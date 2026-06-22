@@ -15,4 +15,9 @@ public class LancheVegano implements Lanche {
     public double getPreco() {
         return 28.0;
     }
+
+    @Override
+    public Lanche clonar() {
+        return new LancheVegano();
+    }
 }

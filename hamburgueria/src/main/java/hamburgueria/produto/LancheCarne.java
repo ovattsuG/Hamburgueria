@@ -15,4 +15,9 @@ public class LancheCarne implements Lanche {
     public double getPreco() {
         return 25.0;
     }
+
+    @Override
+    public Lanche clonar() {
+        return new LancheCarne();
+    }
 }

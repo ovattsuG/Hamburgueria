@@ -20,9 +20,7 @@ public class PedidoSalao extends Pedido {
     }
 
     @Override
-    public double finalizarPedido(double valorItens) {
-        double valorComDesconto = descontoStrategy.aplicar(valorItens);
-        double valorComFidelidade = fidelidadeStrategy.aplicarBeneficio(valorComDesconto);
-        return formaPagamento.cobrar(valorComFidelidade);
+    protected double getTaxaAdicional() {
+        return 0.0;
     }
 }

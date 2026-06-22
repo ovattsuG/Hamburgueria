@@ -9,4 +9,14 @@ public class OnionRings implements Acompanhamento {
     public String emitir() {
         return "Porção de Anéis de Cebola";
     }
+
+    @Override
+    public String getDescricao() {
+        return emitir();
+    }
+
+    @Override
+    public double getPreco() {
+        return 12.00;
+    }
 }

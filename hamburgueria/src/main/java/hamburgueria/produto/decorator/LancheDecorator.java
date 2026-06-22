@@ -23,4 +23,7 @@ public abstract class LancheDecorator implements Lanche {
     public double getPreco() {
         return lancheDecorado.getPreco();
     }
+
+    @Override
+    public abstract Lanche clonar();
 }

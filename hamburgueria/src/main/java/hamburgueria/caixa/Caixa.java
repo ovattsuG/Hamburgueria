@@ -4,7 +4,7 @@ package hamburgueria.caixa;
  * Singleton: Caixa registradora centralizada.
  * Padrão Singleton (GoF) — garante uma única instância do caixa.
  */
-public class Caixa {
+public class Caixa implements ICaixa {
 
     private static final Caixa instancia = new Caixa();
     private double saldoTotal = 0.0;

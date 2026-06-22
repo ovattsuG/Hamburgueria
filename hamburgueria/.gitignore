@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Custom Ignored Files ###
+LOG_ARQUITETURA.md
+maven-bin/
